@@ -21,7 +21,7 @@ Next, call the alert function for those items you wish to create alert. Note, th
 ```javascript
 $('#alert').alert({
     type: 'success',
-    message: 'data saved! Clique in the X to close me!'
+    message: 'data saved! Click in the X to close me!'
 });
 
 $('#alert').alert({
