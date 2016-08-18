@@ -1,4 +1,4 @@
-# simple-bootstrap-alert
+# simple-bootstrap-alert.js
 
 Small JavaScript library which allows you to create dynamically alerts based on bootstrap framework.
 
@@ -21,7 +21,7 @@ Next, call the alert function for those items you wish to create alert. Note, th
 ```javascript
 $('#alert').alert({
     type: 'success',
-    message: 'data saved! Click in the X to close me!'
+    message: 'Data saved! Click in the X to close me!'
 });
 
 $('#alert').alert({
@@ -40,7 +40,7 @@ $('#alert').alert({
 The options that you can set are:
 
 - type: set type of alert. (defaults: success)
-- message: set the alert message. (defaults: null)
+- message: set the alert message. (mandatory specify a message)
 - autoClose: 
   - enable: enable effect to close the alert automatically (defaults: false)
   - type: set effects to close. Available 'fade' or 'slide' (defaults: fade)
