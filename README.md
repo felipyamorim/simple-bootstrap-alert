@@ -1,20 +1,24 @@
 # simple-bootstrap-alert
 
-Small JavaScript library which allows you to create dynamiccaly alerts based on bootstrap framework.
+Small JavaScript library which allows you to create dynamically alerts based on bootstrap framework.
 
 # Usage
 
 Include the js-files which you can find in the dist folder.
 
-```
+```html
 <script src="jquery.min.js" type="text/javascript"></script>
 <script src="bootstrap.min.js" type="text/javascript"></script>
 <script src="simple-bootstra-alert.min.js" type="text/javascript"></script>
 ```
 
-Next, call the alert function for those items you wish to create alert.
+Next, call the alert function for those items you wish to create alert. Note, the alert will be created within the chosen div.
 
+```html
+<div id="alert"></div>
 ```
+
+```javascript
 $('#alert').alert({
     type: 'success',
     message: 'data saved! Clique in the X to close me!'
