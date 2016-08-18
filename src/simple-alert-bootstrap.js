@@ -3,7 +3,11 @@
         alert: function (options) {
 
             if (typeof options !== "object") {
-                throw new Error("É necessário informar um objeto de configuração para inicializar um alerta.");
+                throw new Error("You must provide an options object.");
+            }
+            
+            if (!options.message) {
+              throw new Error("Please specify a message");
             }
 
             var defaults = {
